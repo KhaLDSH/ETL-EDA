@@ -1,0 +1,11 @@
+{
+  "timestamp_utc": "2025-12-22T18:01:07.447691+00:00",
+  "rows": {
+    "orders": 5,
+    "users": 4
+  },
+  "outputs": {
+    "orders": "C:\\Users\\dikha\\tmp-k\\tr4\\ETL-EDA\\data\\processed\\orders.parquet",
+    "users": "C:\\Users\\dikha\\tmp-k\\tr4\\ETL-EDA\\data\\processed\\users.parquet"
+  }
+}
