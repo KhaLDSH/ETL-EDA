@@ -3,8 +3,10 @@ import sys
 from pathlib import Path
 
 
+from bootcamp_data.quality import assert_in_range
 from bootcamp_data.config import make_paths
 from bootcamp_data.io import read_orders_csv, read_users_csv, write_parquet
+
 from bootcamp_data.transforms import (
     enforce_schema,
     missingness_report,
@@ -55,8 +57,9 @@ def main() -> None:
               .pipe(add_missing_flags, cols=["amount", "quantity"])
     )
 
-    # Task 7: add at least one `assert_in_range(...)` check here (fail fast)
 
+    assert_in_range(orders_clean["amount"], lo=0, name="amount")
+    assert_in_range(orders_clean["quantity"], lo=0, name="quantity")
     write_parquet(orders_clean, p.processed / "orders_clean.parquet")
     write_parquet(users, p.processed / "users.parquet")
     log.info("Wrote processed outputs: %s", p.processed)
