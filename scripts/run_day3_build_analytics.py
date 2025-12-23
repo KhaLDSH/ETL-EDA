@@ -53,6 +53,14 @@ def main() -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     joined.to_parquet(out_path, index=False)
     print("wrote:", out_path)
+    
+    summary = (
+    joined.groupby("country", dropna=False)
+          .agg(n=("order_id","size"), revenue=("amount","sum"))
+          .reset_index()
+          .sort_values("revenue", ascending=False)
+    )
+    print(summary)
 
 if __name__ == "__main__":
     main()
