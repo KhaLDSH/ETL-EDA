@@ -16,6 +16,7 @@ from bootcamp_data.transforms import (
 from bootcamp_data.quality import (
     require_columns,
     assert_non_empty,
+    assert_in_range
 )
 
 
