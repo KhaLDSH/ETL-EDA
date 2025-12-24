@@ -3,7 +3,6 @@ import sys
 from pathlib import Path
 
 
-from bootcamp_data.quality import assert_in_range
 from bootcamp_data.config import make_paths
 from bootcamp_data.io import read_orders_csv, read_users_csv, write_parquet
 

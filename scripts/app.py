@@ -7,9 +7,6 @@ from bootcamp_data.config import make_paths
 from bootcamp_data.io import read_orders_csv, read_users_csv, write_parquet
 from bootcamp_data.transforms import enforce_schema
 
-# from src.bootcamp_data.config import make_paths
-# from src.bootcamp_data.io import read_orders_csv, read_users_csv, write_parquet
-# from src.bootcamp_data.transforms import enforce_schema
 
 def main() -> None:
     p = make_paths(ROOT)
@@ -17,7 +14,7 @@ def main() -> None:
     users:pd.DataFrame = read_users_csv(p.raw / "users.csv")
     
     df_orders = orders.copy()
-
+    
     print(df_orders)
 
 
