@@ -32,7 +32,7 @@ uv sync
 
 
 ## Run ETL
-python scripts/run_etl.py
+uv run python scripts/run_etl.py
 
 ## Outputs
 - data/processed/orders_clean.parquet
