@@ -1,3 +1,5 @@
+# ignore this file
+
 import bootcamp_data.yes as yes
 yes
 
