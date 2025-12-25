@@ -1,4 +1,3 @@
-# ETL-EDA
 week2-AiPro
 # ETL & EDA Pipeline 🧩📈
 
@@ -32,7 +31,9 @@ uv sync
 
 
 ## Run ETL
+```bash
 uv run python scripts/run_etl.py
+```
 
 ## Outputs
 - data/processed/orders_clean.parquet
