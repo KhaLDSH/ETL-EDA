@@ -1,0 +1,68 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# =========================
+# uv / packaging
+# =========================
+.uv/
+.python-version
+
+# =========================
+# Jupyter / Notebooks
+# =========================
+# .ipynb_checkpoints/
+# *.nbconvert.ipynb
+# *_out.ipynb
+
+# Optional: if you generate executed notebooks
+notebooks/output/
+notebooks/results/
+
+# =========================
+# Data files (ETL / EDA)
+# =========================
+data/raw/
+data/interim/
+data/processed/
+data/external/
+
+# Allow README or placeholder
+!data/**/README.md
+!data/**/.gitkeep
+
+# =========================
+# Logs & temp
+# =========================
+*.log
+logs/
+tmp/
+temp/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# Reports / exports
+# =========================
+reports/*.html
+reports/*.pdf
+reports/*.csv
