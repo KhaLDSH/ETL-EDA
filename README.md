@@ -43,4 +43,9 @@ uv run python scripts/run_etl.py
 - reports/figures/*.png
 
 ## EDA
+```bash
+uv run jupyter notebook .\notebooks\eda.ipynb
+```
+
+***OR***
 Open notebooks/eda.ipynb and run all cells.
